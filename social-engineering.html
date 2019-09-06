@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="description" content="The personal website of Modibo Camara.">
+    <meta name="author" content="Modibo Camara">
+	<link href="main.css" rel="stylesheet" />
+	<title>Modibo Camara's website</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div id="nav"></div>
+        <script>
+        $("#nav").load("nav.html");
+        </script>
+
+        <div id="main">
+            <div>
+                <h3>A Path Towards Social Engineering</h3>
+
+                <h5>September 5, 2019</h5>
+
+                <p>For me, social engineering is the goal of social science. 
+
+                    I want the ability to design treaties that avoid war;  governments that protect the best interests of their citizens; markets that provide capital where it's needed; laws that protect the helpless without stifling the powerful; cultures that promote experimentation and tolerate uncertainty.
+
+                    And I want to do this in a way that makes it easier for individuals and organizations to figure out <i>how</i> to behave, <i>how</i> to participate in our society, without needing decades of experience and dozens of consultants.
+
+                    Is this achievable? I believe so.
+                </p>
+
+                <p>In this short essay, I argue that progress in the decision sciences (e.g. statistics, computer science) raises the possibility of widespread social engineering, at a level of reliability that many of us currently regard as infeasible. Academic readers should keep in mind that this argument is not intended for a specific audience, not intended to be rigorous, and that I am not claiming originality. This is simply my perspective on research efforts that are already well underway.</p>
+
+                <p>As with any new technology, social technologies -- or <i>mechanisms</i> -- need to be effective and they need to be reliable. In the social sciences, reliability has always been the barrier. Both empirically and philosophically, it seems clear that precise, accurate prediction of human behavior is fundamentally difficult. Taken to the extreme, it is hard to believe that any theory could simultaneously describe the choices of (a) a Mesolithic hunter, (b) a current member of Congress, and (c) a statistician from the fourth millenium. In less extreme instances, it is certainly true that our predictions and prescriptions can be useful. But they are useful in a statistical sense, in that they are better than random guessing. I have yet to see experimental evidence suggesting that <i>any</i> economic theory actually describes the world to a satisfying level of precision.
+                </p>
+
+                <p>Of course, we must acknowledge that (a) precision is not necessary for social science to be useful, and (b) imprecision today does not imply imprecision in perpetuity. Nonetheless, imprecision inhibits our ability to move beyond primitive mechanisms. By analogy, even the groundbreaking discovery of gunpowder would have been all but useless if we lacked precision in the practice of metallurgy or combustion. Moreover, we may benefit from an explicit strategy to make the social sciences more precise. The fact that intellectual progress has a tendency to meander (in line with, "we plan, God laughs") does not imply that planning is useless.</p>
+
+                <p>At first glance, the last three paragraphs seem to contradict one another. I have claimed that (a) precisely predicting human behavior is hard, but (b) precision is necessary for advances in social technology, which violates (c) the feasibility of social engineering. The resolution is obvious but worth emphasizing: we do not need to know how people will behave in <i>any</i> given situation, only in the situation that we <i>actually present them with</i>. So, our social structures should have the property that, whenever a participant is tasked with a decision, that task is one wherein we can precisely predict their behavior.
+                </p>
+
+                <p>There is an important category of tasks where precise prediction seems possible: those subject to automation. For several millennia, human decision-making has become more and more structured, more and more formalized. Especially in recent decades, we have started to rely on algorithms for our decision-making. Researchers rely on off-the-shelf statistical procedures to make predictions. Doctors rely on clinical practice guidelines. Radiologists are experimenting with machine learning algorithms for diagnosing diseases. Automated trading systems are widespread in modern financial markets. With further advances in prescriptive decision theory, statistical learning, and artificial intelligence -- and taking advantage of increasing digitalization -- several kinds of human decision-making may soon become obsolete.</p>
+
+                <p>Mechanisms can provide these decision-making algorithms to their participants. Given a mechanism, these algorithms act in the "best interests" of a given participant, assuming that all other participants follow the recommended behavior(s). However, in most cases, the participant's best interest will not be clearly defined. Even if we agree on our objectives (e.g. maximize profit), rarely is it the case that there is a best algorithm or a best estimator. Sometimes there is an optimal algorithm subject to a choice criterion (e.g. worst-case analysis) that is inherently subjective. The usual trick of economists involves, roughly-speaking, asking participants for their preferred choice criterion. Here, however, human involvement is precisely what we want to minimize.</p>
+
+                <p>Instead, we may need to present participants with an argument. The purpose of this argument is to convince participants that they should follow the recommended behavior(s). If we believe that (a) experts can reliably outperform non-experts and (b) outperformance is persuasive, then the argument is simply: <i>this behavior is recommended by the experts</i>. In particular, you do not need to believe that people are rational. You only need to believe, as Leonard Savage apparently did, that rationality is persuasive. Of course, there will always be subjectivity, but experts are better equipped to deal with that subjectivity.
+                </p>
+
+                <p>Whether these arguments work is (a) an empirical question and (b) a matter of education. With respect to (a), consider that the hypothesis "participants follow my recommendations" is both verifiable and falsifiable when behavior is observed. Thus, the presence of subjectivity does not make this approach unscientific. With respect to (b), participants must have <i>some</i> knowledge of the decision sciences in order for them to understand our arguments. Consider our Mesolithic hunter from earlier. We may find it difficult to convince him to brush his teeth, or get on a plane, or to respect private property. Similarly, a social technology that is unreliable today may become reliable within a few generations. The difference is that future generations may be able to understand more sophisticated arguments regarding what is "good" or "good enough".</p>
+
+                <p>Let us make the discussion more concrete with an example from auction theory. The purpose of the simplest auctions is to allocate a single item to one of many people. Typically, the auctioneer will want to raise money and/or allocate the good to the person who values it most.</p>
+                <ul>
+                    <li>In the first-price auction, everyone submits a sealed bid, the highest bidder wins, and she pays her bid.</li>
+                    <li>In the second-price auction, the person with the highest bid receives the good and pays the second-highest bid. This auction is <i>strategy-proof</i>: bidding your true value is no worse than any other bid, regardless of what everyone else does.</li>
+                    <li>In the ascending auction, the auctioneer gradually increases the price and participants drop out once they're no longer willing to bid at that price. As soon as only one participant remains, the auctioneer sells her the good. This auction is <i>obviously strategy-proof</i>: the most pessimistic outcome after bidding truthfully is no worse than the most optimistic outcome after any other bid.</li>
+                </ul>
+
+                <p>Here, strategy-proofness and obvious strategy-proofness function as arguments in favor of the recommendation to "bid your true value". Both arguments are compelling to experts in this field -- of course, the latter is more restrictive than the former. There is some experimental evidence that obvious strategy-proofness encourages more truth-telling than non-obvious strategy-proofness. But an experiment more appropriate for our setting would involve a population educated in game theory and presented with arguments in favor of truth-telling. I would expect quite different results in the revised experiment. Would you? If so, you can see the importance of education.</p>
+
+                <p>Because these arguments exist, the ascending and second-price auctions may be reliable in practice as well as effective in theory. In contrast, the first-price auction appears unreliable; an expert would struggle to choose a bid, let alone predict what another expert would do. This is not to say that we should restrict attention to strategy-proof mechanisms. Instead, we should open ourselves to new types of arguments and new kinds of resources. The first-price auction, for example, may require market research in order to be reliable. The data collected can be used to form recommendations as well as to convince bidders that this recommendation is statistically justified.</p>
+
+                <p>In conclusion: I have considered (a) an appropriately-educated population, following (b) decision-making algorithms that are known to perform well, in (c) a mechanism that optimizes against those algorithms. Under these conditions, sophisticated social engineering may be possible. The requirements (a) and (c) are something economic theorists are used to dealing with, through teaching and research respectively. Requirement (b) requires continued progress in the decision sciences along with a thoughtful re-examination of normative decision theory in light of said progress.</p>
+
+                <p>To put it more plainly: artifical intelligence may be a game changer for social science. This is not because AI can understand human behavior "in the wild" any better than we can. It is because the profileration of AI can provide a stable foundation for social engineering. Instead of lowering the standards for behavior in our models, we can raise the standards for behavior in the real world. I believe this interplay between the social sciences and the decision sciences represents a coherent strategy to make social engineering viable. It's all very exciting.</p>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

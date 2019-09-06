@@ -1,7 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="description" content="The personal website of Modibo Camara.">
+    <meta name="author" content="Modibo Camara">
+	<link href="main.css" rel="stylesheet" />
+	<title>Modibo Camara's website</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="all">
+        <div id="nav"></div>
+        <script>
+        $("#nav").load("nav.html");
+        </script>
+       
+        <div id="main">
+
+            <a name="about"></a>
+            <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University. You can find me in the Kellogg Global Hub room 3368. My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. I'm also nominally on <a href="https://twitter.com/modibokhane">twitter</a>.</p>
+
+            <p>My current research is in mechanism design, learning in games, and decision theory. I split my time between our economic theory and theoretical computer science communities, including Jason Hartline's Online Markets Lab.</p>
+
+            <!-- <p>Previously, I was an undergraduate at the University of Pennsylvania (majors in econ and math, minor in compsci). I spent two incredible summers at the Federal Reserve Board and the Commodity Futures Trading Commission.</p>
+
+            <p>My dissertation committee includes Eddie Dekel (co-chair), Jeff Ely, Jason Hartline (co-chair), and Marciano Siniscalchi. But all weird opinions are my own.</p>
+
+            <p>Along with Lorenzo Stanca and Xiaoyu Cheng, I occasionally organize a reading group in economic theory. If you want to join the mailing list or want to present something, shoot me an email!</p>
+
+            <p>Teaching: ugrad economics of medicine, applied econometrics, intermediate micro II; grad econometrics II, econometrics III. RAing for CET and Eddie.</p> -->
+
+            <a name="research"></a>
+            <div class="divider"></div>
+            <div>
+                <h3>Research Statement</h3>
+                <!--<p>$a^2+b^2=c^2$</p>-->
+
+                <p>Economists predict behavior using a simple identifying assumption: that agents act in their own best interest. We tend to define "best interest" narrowly enough to derive useful conclusions from a given model, but broadly enough to include certain behaviors that we see empirically. Along the way, we acknowledge that many of our models assume a level of competence that we ourselves would find difficult to satisfy. But only rarely do we take advantage of the fact that statisticians and computer scientists have spent decades formalizing the ways in which decision problems are difficult, and characterizing the difficulty that state-of-the-art methods can handle.</p>
+
+                <p>So: can we leverage theories of complexity to weaken or strengthen our behavioral assumptions in a way that (a) makes our theory more credible, where needed, (b) justifies existing theory, where possible, and (c) modifies our predictions appropriately as a problem becomes more complicated? Can these revised models explain real-world phenomena that are difficult or impossible to express via existing models? My dissertation research answers these questions affirmatively.</p>
+
+                <p>In particular, my work uses a three-step methodology to revise bread-and-butter models in mechanism design and decision theory. It is easy to describe in the abstract (although the execution can be more intricate). Given an existing model:</p>
+                <ol>
+                    <li>Figure out what we're asking agents to do and how real-world experts would accomplish that task.</li>
+                    <li>Identify the performance benchmarks that real-world experts can guarantee (resp. that are impossible to achieve).</li>
+                    <li>Assume that agents weakly overperform (resp. strictly underperform) those benchmarks.</li>
+                </ol>
+                <p>For now, I'll leave it at that. Of course, I'll upload the working papers here once they're ready. I may also post some related discussions or self-contained results in the sections below.</p>
+            </div>
+
+            <a name="thoughts"></a>
+            <div class="divider"></div>
+            <div>
+                <h3>Various Thoughts</h3>
+                <p>I will occasionally write about topics that I'm interested in, new results from my research, and/or opinions that I'd like to express (not that I've earned the right to express opinions... but hey, it's my website). See the links below.</p>
+                <ul>
+                    <li><a href="social-engineering.html">A Path Towards Social Engineering</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <!--<div class="divider"></div>-->
+        </footer>
+    </div>
 </body>
 </html>
