@@ -19,6 +19,11 @@ ul{
     
 }
 
+#cite{
+    color: rgb(100,100,100);
+    cursor: pointer;
+}
+
 header{
     text-align: center;
 }
@@ -28,6 +33,14 @@ header a{
     color: black;
 }
 
+sup a{
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+#footnote{
+    font-size: 14pt;
+}
 
 nav{
     text-align: center;
