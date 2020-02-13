@@ -22,7 +22,7 @@
             <a name="about"></a>
             <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University. You can find me in the Kellogg Global Hub room 3368. My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. I'm also on <a href="https://twitter.com/modibokhane">twitter</a>.</p>
 
-            <p>My current research is in mechanism design, learning in games, and decision theory. I split my time between our economic theory and theoretical computer science communities, including Jason Hartline's Online Markets Lab.</p>
+            <p>My current research is in mechanism design, statistical learning, and decision theory. I split my time between our economic theory, econometrics, and theoretical computer science communities, including Jason Hartline's Online Markets Lab.</p>
 
             <!-- <p>Previously, I was an undergraduate at the University of Pennsylvania (majors in econ and math, minor in compsci). I spent two incredible summers at the Federal Reserve Board and the Commodity Futures Trading Commission.</p>
 
@@ -35,7 +35,7 @@
             <a name="research"></a>
             <div class="divider"></div>
             <div>
-                <h3>Research Statement</h3>
+                <h3>Dissertation Research</h3>
                 <!--<p>$a^2+b^2=c^2$</p>-->
 
                 <p>Economists predict behavior using a simple identifying assumption: that economic agents act in their own best interest. We tend to define "best interest" narrowly enough to derive useful conclusions from a given model, but broadly enough to include certain behaviors that we see empirically. Along the way, we acknowledge that many of our models assume a level of competence that we ourselves would find difficult to satisfy. But only rarely do we take advantage of the fact that statisticians and computer scientists have spent decades formalizing the ways in which decision problems are difficult, and characterizing the difficulty that state-of-the-art methods can handle.</p>
@@ -48,18 +48,34 @@
                     <li>Identify the performance benchmarks that real-world experts can guarantee (resp. that are impossible to achieve).</li>
                     <li>Assume that agents weakly overperform (resp. strictly underperform) those benchmarks.</li>
                 </ol>
-                <p>For now, I'll leave it at that. Of course, I'll upload the working papers here once they're ready. In the meantime, I may post some related discussions or results in the section below.</p>
+            </div>
+
+            <div class="divider"></div>
+            <div>
+                <h3>Work-in-Progress</h3>
+                
+                <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a></h4>
+
+                <p>Life is a high-dimensional decision problem, but dimensionality has received little attention in our theory of choice. I introduce a model of high-dimensional choice under uncertainty where an agent may be asked to make a large number of decisions simultaneously. Here, optimization is challenging. What are the implications for choice behavior?</p>
+		
+				<p>I prove two representation theorems, assuming well-known conjectures in computer science. If a choice correspondence $\phi$ is rational, monotone, and symmetric, then $\phi\in$ P iff the (revealed) utility function $u$ is additively separable. This can be understood as an axiomatic foundation for a heuristic known as narrow choice bracketing. If $\phi$ is rational and monotone, I give a necessary and sufficient condition for $\phi\in$ P/poly, pertaining to the pattern of pairwise violations of additive separability. These results allow me to evaluate rationality through an algorithmic lens. Say an agent's true objective $\bar{u}$ is intractable: should she nonetheless insist on acting rationally? If she cares about approximate optimality, the answer is no.  For a natural class of objectives $\bar{u}$, I show that efficient irrational algorithms can substantially outperform efficient rational ones.</p>
+
+                <h4>Learning Foundations for Mechanism Design (with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>)</h4>
+
+                <p>A rich class of mechanism design problems can be understood as incomplete information games between a principal who commits to a policy and an agent who responds. Traditionally, these models require strong and oft-impractical knowledge assumptions (the common prior). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent are learning over time from data. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that guarantee sublinear regret without any assumptions on the data-generating process. Our results require novel behavioral assumptions for the agent -- based on \textit{counterfactual internal regret} -- that capture the spirit of rationality without imposing structure on the data-generating process.</p>
+
             </div>
 
             <a name="thoughts"></a>
             <div class="divider"></div>
             <div>
-                <h3>Various Thoughts</h3>
-                <p>I'll occasionally write about topics that I'm interested in, self-contained results from my research, and/or opinions that I'd like to express. See the links below.</p>
+                <h3>Miscellaneous</h3>
+                <p>I'll occasionally write about topics that I'm interested in and/or opinions that I'd like to express. See the links below.</p>
                 <ul>
                     <li><a href="social-engineering.html">A Path Towards Social Engineering</a></li>
                     <li><a href="partial-choice.html">Observability Issues in Decision Theory</a></li>
-                    <li><a href="decision-theory.pdf">An Axiomatic Foundation for Narrow Choice Bracketing</a></li>
+                    <!--<li><a href="decision-theory.pdf">An Axiomatic Foundation for Narrow Choice Bracketing</a></li>
+                    <li><a href="contracts.pdf">An Information-Theoretic Foundation for Threshold Contracts</a></li>-->
                 </ul>
                 <p>Please feel free to reach out if anything interests you.</p>
             </div>
