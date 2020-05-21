@@ -11,7 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="all">
+
+
+    <div id="all" width="300">
         <div id="nav"></div>
         <script>
         $("#nav").load("nav.html");
@@ -22,8 +24,6 @@
             <a name="about"></a>
             <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University. You can find me in the Kellogg Global Hub room 3368. My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. I'm also on <a href="https://twitter.com/modibokhane">twitter</a>.</p>
 
-            <p>My current work is in mechanism design, learning in games, and decision theory. I split my time between our economic theory and theoretical computer science communities, including Jason Hartline's Online Markets Lab.</p>
-
             <!-- <p>Previously, I was an undergraduate at the University of Pennsylvania (majors in econ and math, minor in compsci). I spent two incredible summers at the Federal Reserve Board and the Commodity Futures Trading Commission.</p>
 
             <p>My dissertation committee includes Eddie Dekel (co-chair), Jeff Ely, Jason Hartline (co-chair), and Marciano Siniscalchi. But all weird opinions are my own.</p>
@@ -31,9 +31,26 @@
             <p>Along with Lorenzo Stanca and Xiaoyu Cheng, I occasionally organize a reading group in economic theory. If you want to join the mailing list or want to present something, shoot me an email!</p>
 
             <p>Teaching: ugrad economics of medicine, applied econometrics, intermediate micro II; grad econometrics II, econometrics III. RAing for CET and Eddie.</p> -->
+            <a name="papers"></a>
+            <div class="divider"></div>
+            <div>
+                <h3>Work-in-Progress</h3>
+                
+                <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a></h4>
+
+                <p>Life is a high-dimensional decision problem, but dimensionality has received little attention in our theory of choice. I introduce a model of high-dimensional choice under uncertainty where an agent may be asked to make a large number of decisions simultaneously. Here, optimization is challenging. To explore the implications for choice behavior, I prove two representation theorems. The first can be understood as an axiomatic foundation for a heuristic known as narrow choice bracketing. If a choice correspondence is rationalizable (i.e. maximizes SEU), monotone, and symmetric, then it is polynomial-time tractable iff the (revealed) utility function is additively separable. More generally, if the choice correspondence is rationalizable and monotone, I provide a necessary and sufficient condition for (non-uniform) polynomial-time tractability. These results rely on conjectures in computational complexity theory, like P $\neq$ NP.</p>
+
+                <p>These results allow me to evaluate rationality through an algorithmic lens. Say an agent's true objective function is intractable: will her choices be rationalizable? If she cares about approximate optimality, the answer is no. For a natural class of utility functions, I show that every tractable-and-rational choice rule is weakly dominated by an tractable-but-irrational choice rule with a much better approximation guarantee.</p>
+
+                <h4>No-Regret Mechanisms for No-Regret Agents (with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>)</h4>
+
+                <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
+
+            </div>
 
             <a name="research"></a>
             <div class="divider"></div>
+
             <div>
                 <h3>Dissertation Research</h3>
                 <!--<p>$a^2+b^2=c^2$</p>-->
@@ -50,22 +67,6 @@
                 </ol>
             </div>
 
-            <a name="papers"></a>
-            <div class="divider"></div>
-            <div>
-                <h3>Work-in-Progress</h3>
-                
-                <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a></h4>
-
-                <p>Life is a high-dimensional decision problem, but dimensionality has received little attention in our theory of choice. I introduce a model of high-dimensional choice under uncertainty where an agent may be asked to make a large number of decisions simultaneously. Here, optimization is challenging. What are the implications for choice behavior?</p>
-		
-				<p>I prove two representation theorems, assuming well-known conjectures in computer science. If a choice correspondence $\phi$ is rational, monotone, and symmetric, then $\phi\in$ P iff the (revealed) utility function $u$ is additively separable. This can be understood as an axiomatic foundation for a heuristic known as narrow choice bracketing. If $\phi$ is rational and monotone, I give a necessary and sufficient condition for $\phi\in$ P/poly, pertaining to the pattern of pairwise violations of additive separability. These results allow me to evaluate rationality through an algorithmic lens. Say an agent's true objective $\bar{u}$ is intractable: should she nonetheless insist on acting rationally? If she cares about approximate optimality, the answer is no.  For a natural class of objectives $\bar{u}$, I show that efficient irrational algorithms can substantially outperform efficient rational ones.</p>
-
-                <h4>Learning Foundations for Mechanism Design (with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>)</h4>
-
-                <p>A rich class of mechanism design problems can be understood as incomplete information games between a principal who commits to a policy and an agent who responds. Traditionally, these models require strong and oft-impractical knowledge assumptions (the common prior). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent are learning over time from data. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that guarantee sublinear regret without any assumptions on the data-generating process. Our results require novel behavioral assumptions for the agent -- based on counterfactual internal regret -- that capture the spirit of rationality without imposing structure on the data-generating process.</p>
-
-            </div>
 
             <a name="thoughts"></a>
             <div class="divider"></div>
@@ -81,6 +82,7 @@
                 <p>Please feel free to reach out if anything interests you.</p>
             </div>
         </div>
+        <img src="photo3.jpeg" width="40%" float="right">
         <footer>
             <!--<div class="divider"></div>-->
         </footer>
