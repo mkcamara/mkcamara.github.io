@@ -4,25 +4,55 @@
 	<meta charset="utf-8" />
     <meta name="description" content="Modibo Camara's website. I'm an Econ PhD student at Northwestern.">
     <meta name="author" content="Modibo Camara">
-	<link href="main.css" rel="stylesheet" />
+	<!--<link href="main.css" rel="stylesheet" />-->
 	<title>Modibo Camara's website</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
 </head>
 <body>
 
+    <header>
+        <h1>Modibo K. Camara</h1>
+        <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University.</p>
+        <p><center><img src="photo1.jpg" width="50%"></center></p>
+        My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. You can find me in the Kellogg Global Hub room 3368, except when there is a raging pandemic. I also lurk on <a href="https://twitter.com/modibokhane">twitter</a>.
+    </header>
 
-    <div id="all" width="300">
-        <div id="nav"></div>
+    <section>
+        <h2>Work-in-Progress</h2>
+        
+                
+        <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a></h4>
+
+        <p>Life is a high-dimensional decision problem, but dimensionality has received little attention in our theory of choice. I introduce a model of high-dimensional choice under uncertainty where an agent may be asked to make a large number of decisions simultaneously. Here, optimization is challenging. To explore the implications for choice behavior, I prove two representation theorems. The first can be understood as an axiomatic foundation for a heuristic known as narrow choice bracketing. If a choice rule is rationalizable (i.e. maximizes SEU), monotone, and symmetric, then it is polynomial-time tractable iff the Bernoulli utility function is additively separable. More generally, if the choice rule is rationalizable and monotone, I provide a necessary and sufficient condition for (non-uniform) polynomial-time tractability. These results rely on conjectures in computational complexity theory, like P $\neq$ NP.</p>
+
+        <p>These results allow me to evaluate rationality through an algorithmic lens. Say an agent's true objective function is intractable: will her choices be rationalizable? If she cares about approximate optimality, the answer is no. For a natural class of utility functions, I show that every tractable-and-rationalizable choice rule is weakly dominated by an tractable-but-irrational choice rule with a much better approximation guarantee.</p>
+
+        <h4>No-Regret Mechanisms for No-Regret Agents</h4>
+
+        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>. Draft available by request.</h5>
+
+        <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
+    </section>
+
+    <div id="all"><!--width="300"-->
+
+        
+
+        <!--<div id="nav"></div>
         <script>
         $("#nav").load("nav.html");
-        </script>
+        </script>-->
        
         <div id="main">
 
+            
+
+
             <a name="about"></a>
-            <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University. You can find me in the Kellogg Global Hub room 3368. My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. I'm also on <a href="https://twitter.com/modibokhane">twitter</a>.</p>
+            
 
             <!-- <p>Previously, I was an undergraduate at the University of Pennsylvania (majors in econ and math, minor in compsci). I spent two incredible summers at the Federal Reserve Board and the Commodity Futures Trading Commission.</p>
 
@@ -34,26 +64,15 @@
             <a name="papers"></a>
             <div class="divider"></div>
             <div>
-                <h3>Work-in-Progress</h3>
                 
-                <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a></h4>
-
-                <p>Life is a high-dimensional decision problem, but dimensionality has received little attention in our theory of choice. I introduce a model of high-dimensional choice under uncertainty where an agent may be asked to make a large number of decisions simultaneously. Here, optimization is challenging. To explore the implications for choice behavior, I prove two representation theorems. The first can be understood as an axiomatic foundation for a heuristic known as narrow choice bracketing. If a choice rule is rationalizable (i.e. maximizes SEU), monotone, and symmetric, then it is polynomial-time tractable iff the Bernoulli utility function is additively separable. More generally, if the choice rule is rationalizable and monotone, I provide a necessary and sufficient condition for (non-uniform) polynomial-time tractability. These results rely on conjectures in computational complexity theory, like P $\neq$ NP.</p>
-
-                <p>These results allow me to evaluate rationality through an algorithmic lens. Say an agent's true objective function is intractable: will her choices be rationalizable? If she cares about approximate optimality, the answer is no. For a natural class of utility functions, I show that every tractable-and-rationalizable choice rule is weakly dominated by an tractable-but-irrational choice rule with a much better approximation guarantee.</p>
-
-                <h4>No-Regret Mechanisms for No-Regret Agents (with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>)</h4>
-
-                <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
 
             </div>
 
             <a name="research"></a>
             <div class="divider"></div>
 
-            <div>
+            <!--<div>
                 <h3>Dissertation Research</h3>
-                <!--<p>$a^2+b^2=c^2$</p>-->
 
                 <p>Economists predict behavior using a simple identifying assumption: that economic agents act in their own best interest. We tend to define "best interest" narrowly enough to derive useful conclusions from a given model, but broadly enough to include certain behaviors that we see empirically. Along the way, we acknowledge that many of our models assume a level of competence that we ourselves would find difficult to satisfy. But only rarely do we take advantage of the fact that statisticians and computer scientists have spent decades formalizing the ways in which decision problems are difficult, and characterizing the difficulty that state-of-the-art methods can handle.</p>
 
@@ -76,13 +95,10 @@
                 <ul>
                     <li><a href="social-engineering.html">A Path Towards Social Engineering</a></li>
                     <li><a href="partial-choice.html">Observability Issues in Decision Theory</a></li>
-                    <!--<li><a href="decision-theory.pdf">An Axiomatic Foundation for Narrow Choice Bracketing</a></li>
-                    <li><a href="contracts.pdf">An Information-Theoretic Foundation for Threshold Contracts</a></li>-->
                 </ul>
                 <p>Please feel free to reach out if anything interests you.</p>
-            </div>
+            </div>-->
         </div>
-        <img src="photo3.jpeg" width="40%" float="right">
         <footer>
             <!--<div class="divider"></div>-->
         </footer>
