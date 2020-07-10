@@ -15,11 +15,17 @@
 
     <header>
         <h1>Modibo K. Camara</h1>
-        <p>Welcome! I'm a fourth-year Economics PhD student at Northwestern University.</p>
+        <p>Welcome! I'm a rising fifth-year Economics PhD student at Northwestern University.</p>
         <p><center><img src="photo4.jpeg" width="100%" loading="lazy"></center></p>
         <p>My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. You can find me in the Kellogg Global Hub room 3368, except when there's a raging pandemic. I also lurk on <a href="https://twitter.com/modibokhane">twitter</a>.</p>
 
-        <p>My research is in mechanism design and bounded rationality, and I am broadly interested in the design of economic and social institutions. To that end, I borrow heavily from ideas and methods in theoretical computer science and statistics.</p>
+        <p>My research is in <b>mechanism design</b> and <b>bounded rationality</b>, but I am broadly interested in the design of economic and social institutions. To that end, I borrow heavily from ideas and methods in theoretical computer science and statistics.</p>
+
+        <p>Recent news:
+        <ul>
+            <li><i>No-Regret Mechanisms for No-Regret Agents</i> was accepted to <b>FOCS 2020</b>, a top peer-reviewed conference in theoretical computer science.</li>
+            <li>I'm spending the summer of 2020 as an intern at <b>Microsoft Research NYC</b>, working with Nicole Immorlica and others on research in economic theory.</li>
+        </ul></p>
 
         <!--<p>Here's a quick bio in lieu of a CV.</p>
         <ul>
@@ -37,15 +43,17 @@
         
         Here's what I'm working on. If I don't link to a draft, it's available by request.
 
+        <h4>No-Regret Mechanisms for No-Regret Agents (<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>
+
+        <h5>To appear FOCS 2020. Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.</h5>
+
+        <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
+
         <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a> (<a href="https://www.youtube.com/watch?v=hyPxG3eeVXA">1-min talk</a>)</h4>
 
         <p>In economic theory, rationality assumptions are used to make predictions about choice behavior. However, because life involves so many decisions, rationality in practice means solving a high-dimensional optimization problem. This can be computationally hard. In this paper, I introduce a model of high-dimensional choice under uncertainty, along with an axiom of computational tractability, to ask two questions. First, can tractability axioms, paired with rationality axioms, be used to obtain tighter predictions for choice behavior? I prove two representation theorems that provide an affirmative answer, by characterizing the set of tractable and rationalizable choice rules. In particular, one of the representations corresponds to a heuristic known as narrow choice bracketing. Second, when tractability constraints bind, will a self-interested decision-maker make rationalizable choices? Not necessarily. I show that for many intractable utility functions, no rationalizable algorithm obtains a constant approximation, yet every such algorithm is weakly dominated by an irrational algorithm that does.</p>
 
-        <h4>No-Regret Mechanisms for No-Regret Agents (<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>
-
-        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.</h5>
-
-        <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
+        
     </section>
 
     <footer>
