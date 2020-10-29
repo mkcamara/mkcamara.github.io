@@ -5,7 +5,7 @@
     <meta name="description" content="Modibo Camara's website. I'm an Econ PhD student at Northwestern.">
     <meta name="author" content="Modibo Camara">
 	<!--<link href="main.css" rel="stylesheet" />-->
-	<title>Modibo Camara's website</title>
+	<title>Modibo Camara | PhD Student</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,21 +13,10 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+    <a name="home"></a>
+    <div>
     <header>
-        <h1>Modibo Camara, PhD Student</h1>
-        <p><center><img border="2px solid #555" src="photo.png" width="40%" loading="lazy"></center></p>
-        <p>Welcome! I'm a fifth-year Economics PhD student at Northwestern University. My email is <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a>. My office is KGH 3368. My twitter handle is <a href="https://twitter.com/modibokhane">@modibokhane</a>.</p>
-
-        <p>My research is in <b>mechanism design</b> as well as <b>bounded rationality</b>, but I am broadly interested in the design of economic and social institutions. To that end, I borrow heavily from ideas and methods in theoretical computer science and statistics.</p>
-
-        <p>Recent news:
-        <ul>
-            <li>I'm presenting <i>High-Dimensional Decision Theory</i> at the 2020 European Winter Meeting of the Econometric Society, the Young Economists Symposium 2020, and the 15th Economic Graduate Students Conference. 
-            <li><i>Mechanisms for a No-Regret Agent</i> was accepted to <b>FOCS 2020</b>, a top peer-reviewed conference in theoretical computer science.</li>
-            <li>I spent the summer of 2020 as an intern at <b>Microsoft Research NYC</b>, working with Nicole Immorlica, Brendan Lucier, and others on research in EconCS.</li>
-        </ul></p>
-
+        <h1>Modibo Camara</h1>
         <!--<p>Here's a quick bio in lieu of a CV.</p>
         <ul>
             <li>I graduated in 2016 from the University of Pennsylvania, with majors in economics and math. I also have an M.A. in economics from Northwestern.</li>
@@ -35,26 +24,58 @@
             <li>I am grateful to be co-advised by Eddie Dekel (Econ) and Jason Hartline (CS).</li>
         </ul>-->
     </header>
+    <nav>
+        <ul list-style-type="none">
+        <a href=#home><li>Home</li></a>
+        <li>|</li>
+        <a href=#papers><li>Working Papers</li></a>
+        <li>|</li>
+        <a href=#talks><li>Recorded Talks</li></a>
+        </ul>
+    </nav>
+    <img class="photo" src="photo.png" width="38%" loading="lazy">
+    <section>
+        <p class="shift">Welcome! I'm a fifth-year Economics PhD student at <b>Northwestern University</b>.
+            <ul>
+                <li>Office: KGH 3368</li>
+                <li>Email: <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a></li>
+                <li>Twitter:  <a href="https://twitter.com/modibokhane">@modibokhane</a></li>
+            </ul>
+        </p>
+        <p class="keep">I work at the intersection of <b>microeconomic theory</b>, <b>statistics</b>, and <b>computer science</b>.</p>
 
-    <section width=1000px>
-        <h2>Research</h2>
-        
-        Here's what I'm working on.<!-- If I don't link to a draft, it's available by request.-->
+        <p>My research asks what people and institutions are capable of achieving, given the resources that are available to them -- resources like time and data.</p>
+
+        <p>Ultimately, the goal for this line of research is to help people make better decisions and build better, more reliable institutions. This aligns with the view of economics as an engineering discipline.</p>
+    </section>
+
+    <section>
+        <a name="papers"></a>
+        <h2>Working Papers</h2>
+
+        <h4>Hadwiger Separability, or: Turing meets Von Neumann and Morgenstern</h4>
+        <h5>Previously known as <i>High-Dimensional Decision Theory</i> (<a href="high-dimensional-decision-theory.pdf">draft</a>).</h5>
+
+        <p>
+            I define a relaxation of additive separability, called Hadwiger separability. In a model of high-dimensional choice under uncertainty, I show that any rationalizable and computationally tractable choice correspondence has a Bernoulli utility function that is Hadwiger separable. The converse is also true, with caveats. This tractability axiom is used in computational complexity theory to identify problems that are too hard to solve, even for computers, regardless of which algorithm is used. I explore applications in behavioral economics and demand estimation. Finally, I reconsider whether choices reveal preferences, given computational constraints. Not necessarily; it turns out that for many natural (but intractable) utility functions, no optimal approximation algorithm is rationalizable.</p>
 
         <h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
 
-        <h5>To appear FOCS 2020. Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.</h5>
-        <center>
+        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.
+            </br>Forthcoming at FOCS 2020 (<a href="focs_camera.pdf">extended abstract</a>).</h5>
+
+        <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- based on <i>counterfactual calibration</i> -- that capture the spirit of rationality without relying on beliefs.</p>
+    </section>
+
+    <section>
+        <a name="talks"></a>
+        <h2>Recorded Talks</h2>
+
+        <h4>Mechanisms for a No-Regret Agent (24m)</h4>
+        <p>Recorded in November 2020 for the FOCS conference. This was prepared for an audience of theoretical computer scientists, but should also be accessible to economists.</p>
+        <center class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Bt3IVL691Wg"></iframe>
         </center>
-
-        <p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- centered around <i>counterfactual internal regret</i> -- that capture the spirit of rationality without relying on beliefs.</p>
-
-        <h4><a href="high-dimensional-decision-theory.pdf">High-Dimensional Decision Theory</a> <!--(<a href="https://www.youtube.com/watch?v=hyPxG3eeVXA">1-min talk</a>)--></h4>
-
-        <p>In economic theory, rationality assumptions are used to make predictions about choice behavior. However, because life involves so many decisions, rationality in practice means solving a high-dimensional optimization problem. This can be computationally hard. In this paper, I introduce a model of high-dimensional choice under uncertainty, along with an axiom of computational tractability, to ask two questions. First, can tractability axioms, paired with rationality axioms, be used to obtain tighter predictions for choice behavior? I prove two representation theorems that provide an affirmative answer, by characterizing the set of tractable and rationalizable choice rules. In particular, one of the representations corresponds to a heuristic known as narrow choice bracketing. Second, when tractability constraints bind, will a self-interested decision-maker make rationalizable choices? Not necessarily. I show that for many intractable utility functions, no rationalizable algorithm obtains a constant approximation, yet every such algorithm is weakly dominated by an irrational algorithm that does.</p>
-
-        
     </section>
 
     <footer>
@@ -129,5 +150,6 @@
             </div>-->
         </div>
     </div>
+</div>
 </body>
 </html>
