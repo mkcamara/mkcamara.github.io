@@ -16,7 +16,7 @@
     <a name="home"></a>
     <div>
     <header>
-        <h1>Modibo Camara</h1>
+        <h1>Resources for Modibo's Committee</h1>
         <!--<p>Here's a quick bio in lieu of a CV.</p>
         <ul>
             <li>I graduated in 2016 from the University of Pennsylvania, with majors in economics and math. I also have an M.A. in economics from Northwestern.</li>
@@ -24,96 +24,59 @@
             <li>I am grateful to be co-advised by Eddie Dekel (Econ) and Jason Hartline (CS).</li>
         </ul>-->
     </header>
-    <nav>
-        <ul list-style-type="none">
-        <a href=#home><li>Home</li></a>
-        <li>|</li>
-        <a href=#papers><li>Working Papers</li></a>
-        <li>|</li>
-        <a href=#talks><li>Recorded Talks</li></a>
-        </ul>
-    </nav>
-    <img class="photo" src="headshot.jpg" width="38%" loading="lazy">
-    <section>
-        <p class="shift">Welcome! I'm a fifth-year Economics PhD student at Northwestern University.
-            <ul>
-                <li>Office: KGH 3368</li>
-                <li>Email: <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a></li>
-                <li>Twitter:  <a href="https://twitter.com/modibokhane">@modibokhane</a></li>
-            </ul>
-        </p>
-        <p class="keep">I work at the intersection of <b>microeconomic theory</b> and <b>computer science</b>.</p>
-
-        <p>My research asks what people and institutions are capable of achieving, given the resources that are available to them -- resources like time and data.</p>
-        <!--<p>Ultimately, the goal for this line of research is to help people make better decisions and build better, more reliable institutions. This aligns with the view of economics as an engineering discipline.</p>-->
-
-        <h5>Recent Talks:</h5>
-        <ul>
-        	<li>Cornell ORIE Colloquium</li>
-        	<li>European Summer Meeting of the Econometric Society</li>
-        	<li>Economics and Computation 2021 ("Highlights Beyond EC")</li>
-        	<li>6th World Congress of the Game Theory Society 2020 (GAMES)</li>
-        	<li>Risk, Uncertanty, and Decision (RUD) 2021</li>
-        	<li>Decision: Theory, Experiments, and Applications (D-TEA) 2021</li>
-        	<li>North American Summer Meeting of the Econometric Society</li>
-        	<li>Africa Meeting of the Econometric Society</li>
-        </ul>
-    </section>
 
     <section>
+		<p><a href="https://mkcamara.github.io">Personal website</a> (official Northwestern website to come)</p>
+        <p><a href="CV_template.pdf">Latest CV</a>
+
+		<h2>Applications</h2>
+
+		Once I have my applications organized, I will probably list them here along with any relevant deadlines.
+
         <a name="papers"></a>
-        <h2>Working Papers</h2>
-        <p>Titles are tentative.</p>
+        <h2>Dissertation Chapters</h2>
 
-        <h4><a href="hadwiger_separability.pdf">Computationally Tractable Choice</a></h4>
+        <h4><a href="hadwiger_separability.pdf">Computationally Tractable Choice</a> (JMP) (<a href="ctc_slides.pdf">latest slides</a>)</h4>
         <!--<h5>Previously known as <i>High-Dimensional Decision Theory</i></h5>-->
-        <h5>New draft coming soon.</h5>
 
-        <p>This paper incorporates computational constraints into decision theory, via an axiom of computational tractability. I use the resulting framework to better understand common behavioral heuristics, as well as violations of rationality. My representation theorems show that choices satisfying both the rationality and tractability axioms correspond to forms of choice bracketing, a heuristic observed in lab experiments. I also prove a trilemma: for many objective functions cannot simultaneously be rational, tractable, and approximately optimal. This suggests computationally constrained agents may be better off violating standard rationality axioms.</p>
+		<p><b>Abstract:</b> This paper incorporates computational constraints into decision theory, via an axiom of computational tractability. I use the resulting framework to better understand common behavioral heuristics, as well as violations of rationality. My representation theorems show that choices satisfying both the rationality and tractability axioms correspond to forms of choice bracketing, a heuristic observed in lab experiments. I also prove a trilemma: for many objective functions cannot simultaneously be rational, tractable, and approximately optimal. This suggests computationally constrained agents may be better off violating standard rationality axioms.</p>
 
-        <h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
+        <p><b>Status:</b> latest polished draft from June (see link). Currently revising subject to department deadlines. Hope to upload to arxiv by mid October.</p>
 
-        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.
-            </br>Appeared at FOCS 2020 (<a href="focs_camera.pdf">extended abstract</a>).
-        	</br>Selected for "Highlights Beyond EC" at EC 2021.</h5>
+        <p><b>Plans:</b> submit to journal once committee gives the all-clear. Latest guidance was start with AER over ECTA, but let me know if that changes.</p>
+
+        <h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a> (<a href="mnra_slides.pdf">latest slides</a>)</h4> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
+
+        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.</h5>
+
+		<p><b>Abstract:</b> 
+
+        A rich class of economic problems—like monopoly regulation, contract design, and Bayesian persuasion—can be understood as games of incomplete information played by a policymaker who commits to a policy and an agent who responds. Typically, optimal policies depend on both the policymaker and the agent’s prior knowledge about the environment. To get around this, researchers often (a) assume that both the policymaker and the agent have substantial prior knowledge, or (b) assume no knowledge and optimize against the worst-case. We propose online learning as a way to combine the superior performance of (a) with the robustness of (b). We study a repeated interaction where both the policymaker and the agent may learn about the environment over time. We develop simple calibrated policies that ensure bounded regret, relative to the best-in-hindsight static policy. Our guarantees are prior-free and hold even in highly non-stationary environments. They require novel behavioral assumptions that capture concepts like "rationality'' or "unpredictability'' without relying on beliefs.</p>
+
+        <p><b>Status:</b> have been working on revision for some time now. Current arxiv version is outdated and not ideal for economists. Finishing will probably take a few weeks of work.</p>
+
+        <p><b>Plans:</b> we wanted to submit to a top-5 journal to start. IIRC Marciano was on board once some things were fixed. Eddie was more pessimistic, which was a major reason for the revision. Would be great to get feedback on the finished draft before submitting.</p>
 
         <!--<p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- based on <i>counterfactual calibration</i> -- that capture the spirit of rationality without relying on beliefs.</p>-->
 
-        <p>This paper studies a rich class of single-agent policy design problems that includes monopoly regulation, contract design, and Bayesian persuasion as special cases.
-		Most existing solutions either (a) assume a common prior belief over the environment, or (b) make no prior knowledge assumptions and optimize against the worst case.
-		We show that, in repeated settings with rich feedback, we can approximate the superior performance of (a) while preserving the robustness of (b).
-		We develop simple calibrated policies that ensure vanishing or bounded regret, relative to the ex-post-optimal static policy.
-		Our guarantees are prior-free and hold even in highly non-stationary environments.
-		They rely on novel behavioral assumptions that capture concepts like ``rationality'' or ``unpredictability'' without relying on beliefs.
-		These new approaches are needed because, unlike related work, we do not treat the agent's behavior as exogenous.</p>
-
-        <h4>Statistical Policy Design</h4>
-        <h5>Draft coming soon.</h5>
-        <p>In many settings, understanding an agent's beliefs can be the difference between a successful policy and one that fails dramatically.
+        <h4><a href="statistical_policy_design.pdf">Statistical Policy Design</a> (placeholder title) (slides to come)</h4>
+        
+		<p><b>Abstract:</b> In many settings, understanding an agent's beliefs can be the difference between a successful policy and one that fails dramatically.
         Unfortunately, in many instances, the rich behavioral or survey data needed to identify an agent's beliefs may not be available.
         In this paper, I propose a modeling assumption that bypasses this issue, and show that it can highlight important policy trade-offs not captured by existing models.
         The core idea is straightforward: if the available data convincingly demonstrates some fact about the world, the agent should believe that fact.
-        Otherwise, her beliefs are left unspecified.
-        I develop this approach in the context of incomplete-information games where a policymaker commits to a policy, an agent responds, and both have access to a public dataset.
+        Otherwise, her beliefs are left unspecified. I develop this approach in the context of incomplete-information games where a policymaker commits to a policy, an agent responds, and both have access to a public dataset.
         It turns out that policies that are too complex may be suboptimal because they lead to unpredictable behavior.
         To balance the benefits of policy complexity with its costs, I develop a method called strategic regularization and motivate it through both theoretical guarantees and illustrative examples.</p>
-    </section>
 
-    <section>
-        <a name="talks"></a>
-        <h2>Recorded Talks</h2>
+		<p><b>Status:</b> Draft is almost ready for arxiv. The only outstanding item are the last two subsections (two of the illustrative examples) need to be written up. That will probably take a few days of work.</p>
 
-        <h4>Computationally Tractable Choice (31m)</h4>
-        <p>Recorded in June 2021 for the RUD conference. Target audience: economic theorists.</p>
-        <center class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VxaQWBToat8"></iframe>
-        </center>
-
-        <h4>Mechanisms for a No-Regret Agent (24m)</h4>
-        <p>Recorded in October 2020 for the FOCS conference. Target audience: theoretical computer scientists.</p>
-        <center class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bt3IVL691Wg"></iframe>
-        </center>
+		<p><b>Plans:</b> planning to submit to Economics & Computation conference to start (February deadline). That will give me plenty of time to get feedback before submitting to journal.</p>
+        
+        <h2>Work-in-Progress</h2>
+        I will need to think about what work in progress I want to list, if any. 
+        I have four projects (three collaborative) with some kind of theorem or worked through example.
+        But none are anywhere close to a working draft.
     </section>
 
     <footer>
