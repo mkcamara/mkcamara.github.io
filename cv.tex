@@ -1,0 +1,254 @@
+\documentclass[margin,line]{res}
+
+% File produced by Jeremy West
+% This file may be distributed and/or modified:
+%   1. under the LaTeX Project Public License and/or
+%   2. under the GNU Public License.
+
+% NOTE: you also need the (included) res.cls class file to compile this document
+% Either place the .cls file in the same directory (folder) as this .tex file, or install it globally for your LaTeX distribution (search online for how to do so).
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{setspace}                                    % Allows for custom margins, etc.
+\usepackage{fullpage}                                    % Use the full page
+\usepackage[latin9]{inputenc}                            % Font definition and input type
+\usepackage[T1]{fontenc}                                 % Font output type
+\usepackage{mmap}                                        % Allows glyphs (e.g. ff) to copy properly (ASCII)
+\usepackage{textcomp}                                    % Supports many symbols such as copyright
+\usepackage{color}                                       % Allow for colored text, etc.
+\usepackage[]{hyperref}                                  % Allow hyperlinks (internal and external)
+\hypersetup{                                             % Custom hyperlink settings
+    pdffitwindow=true,                                  % Window fit to page when opened
+    pdfstartview={XYZ null null 1.00},                   % Fits the zoom of the page to 100%
+    pdfnewwindow=true,                                   % Links in new window
+    colorlinks=true,                                     % false: boxed links; true: colored links
+    linkcolor=black,                                     % Color of internal links (black is necessary for printing quality)
+    citecolor=black,                                     % Color of links to bibliography
+    urlcolor=[rgb]{0.31,0.16,0.52},                                      % Color of external links
+    pdfauthor = {Modibo Camara},
+    pdfkeywords = {Economics, Northwestern},
+    pdftitle = {CV, Modibo Camara},
+    pdfsubject = {Curriculum Vitae},
+    pdfpagemode = UseNone}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+	\addtolength{\topmargin}{-.3in}
+	\addtolength{\textheight}{0.6in}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{.025in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\usepackage[nodayofweek]{datetime}                                    % Custom date format for date field
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}   % Defining month year date format
+
+\usepackage{fancyhdr}                                    % Used for custom page headers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\rhead{\footnotesize Modibo Camara \thepage} %header at the right
+\headsep = 0.5cm
+% FIRST PAGE ONLY (redefine the plain pagestyle)
+\fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\headsep = 0.0cm
+%\rhead{\footnotesize Last updated \today}
+\rhead{\footnotesize \includegraphics[scale=.11]{Shorthand-Vertical-Purple}}
+}
+
+
+\begin{document}
+\pretolerance=10000
+
+~\\
+~\\
+\name{  {\LARGE  Modibo Camara} \vspace*{.1in}}
+
+\begin{resume}
+\thispagestyle{plain} % to use first page footer
+
+\begin{table}[h]
+\footnotesize
+\begin{tabular}{@{}p{0.20in}p{1.5in}p{1.4in}p{.7in}p{1.5in}}
+& Placement Director:	& Professor Alessandro Pavan & 847-491-8266  & \href{mailto: alepavan@northwestern.edu}{alepavan@northwestern.edu}\\
+& Placement Administrator:	& Alison Stoute &	847-491-5694  & \href{mailto: econjobmarket@northwestern.edu}{econjobmarket@northwestern.edu}\\
+ \end{tabular}
+\end{table}
+
+\section{ Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{0.20in}p{2.75in}p{2.75in}}
+ & Department of Economics           &Mobile: 202-415-2751 \\
+ & Northwestern University   & \href{mailto: mcamara@u.northwestern.edu}{mcamara@u.northwestern.edu} \\
+ & 2211 Campus Drive & \href{https://sites.northwestern.edu/mkc6866/}{https://sites.northwestern.edu/mkc6866/}\\
+ & Evanston, IL 60208  & Citizenship: United States, Germany
+\end{tabular}
+
+\section{ Fields}
+\begin{list1}
+\item[] Research: Microeconomic Theory, Economics \& Computation
+\item[] Teaching: Microeconomics, Econometrics
+\vspace*{.05in}
+\end{list1}
+
+\section{ Education}\begin{tiny}
+
+\end{tiny}
+\begin{list1}
+\item[] Ph.D., Economics, Northwestern University\hfill (anticipated) 2022
+\item[] \begin{list2}
+		\item[] Dissertation: Complexities in Economic Theory
+		\item[] Committee: Eddie Dekel (Chair), Jason Hartline (Chair), Marciano Siniscalchi, Jeffrey Ely
+	\end{list2}
+\item[] M.A., Economics, Northwestern University\hfill 2018
+\item[] B.A., Mathematics \& Economics, University of Pennsylvania\hfill 2016
+\end{list1}
+
+\section{Fellowships \& Awards}
+\begin{list1}
+\item[] Distinguished TA Award\hfill 2021-22
+\item[] Dissertation University Fellowship, Northwestern University\hfill 2021-22
+\end{list1}
+
+\section{Teaching Experience}
+\begin{list1}
+\item[] Teaching Assistant, Northwestern University\hfill 2017-2021
+\item[] \begin{list2}
+		\item[] Econometrics (graduate), Econometrics (undergrad), Microeconomics (undergrad)
+	\end{list2}
+\end{list1}
+
+\section{Research Experience}
+\begin{list1}
+\item[] Research Intern, Nicole Immorlica, Microsoft Research\hfill 2020
+\item[] Research Assistant, Eddie Dekel, Northwestern University\hfill 2019
+\item[] Project Intern, Yian Liu, Federal Reserve Board of Governors\hfill 2015
+\item[] Intern, Esen Onur, Commodity Futures Trading Commission\hfill 2014
+\item[] Research Assistant, Susan Wachter, University of Pennsylvania\hfill 2013-14
+%\vspace*{.05in}
+\end{list1}
+
+\section{ Conferences}
+\begin{list1}
+\item[] European Winter Meeting of the Econometric Society\hfill 2021
+\item[] Cornell ORIE (invited)\hfill 2021
+\item[] Economics and Computation (invited)\hfill 2021
+\item[] Transatlantic Theory Workshop\hfill 2021
+\item[] Risk, Uncertanty, and Decision (RUD)\hfill 2021
+\item[] Decision: Theory, Experiments, and Applications (D-TEA)\hfill 2021
+\item[] North American Summer Meeting of the Econometric Society \hfill 2021
+\item[] Africa Meeting of the Econometric Society \hfill 2021
+\item[] European Summer Meeting of the Econometric Society \hfill 2021
+\item[] World Congress of the Game Theory Society (GAMES)\hfill 2021
+\item[] Foundations of Computer Science (FOCS)\hfill 2020
+\item[] European Winter Meeting of the Econometric Society\hfill 2020
+\item[] Young Economists Symposium (YES)\hfill 2020
+\item[] Economics Graduate Student Conference (EGSC)\hfill 2020
+\item[] Midwest Theory Day\hfill 2018
+\end{list1}
+
+\section{Refereeing}
+\begin{list1}
+\item[] American Economic Review, Journal of Mathematical Economics, The Web Conference
+\end{list1}
+
+\section{Job Market Paper}
+\begin{list1}
+\item[] \textbf{``Computationally Tractable Choice''}
+\vspace*{.05in}
+	\begin{list2}
+		\item[] \textit{Abstract:} 
+		I incorporate computational constraints into decision theory in order to capture how cognitive limitations affect behavior.
+		I impose an axiom of computational tractability that rules out behaviors that are thought to be fundamentally hard. 
+		I use this framework to better understand common behavioral heuristics: if choices are tractable and consistent with the expected utility axioms, then they are observationally equivalent to forms of choice bracketing.
+		Then I show that a computationally-constrained decisionmaker can be objectively better off if she is willing to use heuristics that would not appear rational to an outside observer.
+	\end{list2}
+\end{list1}
+
+\section{Other Papers}
+\begin{list1}
+\item[] \textbf{``Mechanisms for a No-Regret Agent: Beyond the Common Prior''} (with  J. Hartline, A. Johnsen)
+\vspace*{.05in}
+	\begin{list2}
+		\item[] \textit{Abstract:} We study repeated games of incomplete information between a policymaker with commitment power and a single agent.
+		We propose policies that adapt to historical data over time, assuming the agent does the same, without making any assumptions about the data-generating process.
+		They are competitive with optimal static policies that rely on much stronger assumptions, like common prior beliefs.
+		We conclude that robust solution concepts in mechanism design may be too pessimistic if they do not account for the possibility of learning over time.
+	\end{list2}
+\end{list1}
+\vspace*{.1in}
+\begin{list1}
+	\item[] \textbf{``Mechanism Design with a Common Dataset''}
+\vspace*{.05in}
+	\begin{list2}
+		\item[] \textit{Abstract:} 
+		I propose a new approach to mechanism design: rather than assume a common prior belief, assume access to a common dataset.
+		I restrict attention to incomplete information games where a designer commits to a policy and a single agent responds.
+		I proposed a penalized policy that performs well under weak assumptions on how the agent learns from data.
+		Policies that are too complex, in a precise sense, are penalized because they lead to unpredictable responses by the agent.
+		This approach leads to new insights in models of vaccine distribution, prescription drug approval, performance pay, and product bundling.
+	\end{list2}
+\end{list1}
+
+\section{Languages}
+\begin{list1}
+\item[] English (fluent), German (native), Spanish (intermediate)
+\end{list1}
+
+\section{ References}
+\vspace{.05in}
+%Pick from:
+\begin{tabular}{@{}p{0.20in}p{2.75in}p{2.75in}}
+ & Professor Eddie Dekel           & Professor Jason Hartline \\
+ & Department of Economics   & Department of Computer Science \\
+ & Northwestern University   & Northwestern University \\
+ & 2211 Campus Drive  & 2233 Tech Drive  \\
+ & Evanston, IL 60208  & Evanston, IL 60208\\
+ & 847.491.4414  & 847.467.0280\\
+ &  \href{mailto: dekel@northwestern.edu}{dekel@northwestern.edu} &  \href{mailto: hartline@northwestern.edu}{hartline@northwestern.edu} \\
+\end{tabular}
+\vspace{.1in} ~\\
+\begin{tabular}{@{}p{0.20in}p{2.75in}p{2.75in}}
+	& Professor Marciano Siniscalchi           & Professor Jeffrey Ely \\
+	& Department of Economics   & Department of Economics \\
+	& Northwestern University   & Northwestern University \\
+	& 2211 Campus Drive  & 2211 Campus Drive  \\
+	& Evanston, IL 60208  & Evanston, IL 60208\\
+	& 847.491.5398  & 847.491.8208\\
+	&  \href{mailto: marciano@northwestern.edu}{marciano@northwestern.edu} &  \href{mailto: jeffely@northwestern.edu}{jeffely@northwestern.edu} \\
+\end{tabular}
+%\begin{tabular}{@{}p{0.20in}p{2.75in}p{2.75in}}
+% & Professor XX            \\
+% & Department of Economics   \\
+% & Northwestern University    \\
+% & 2211 Campus Drive    \\
+% & Evanston, IL 60208  \\
+% & 847.491.xxxx  \\
+% &  \href{mailto: xx@northwestern.edu}{xx@northwestern.edu}  \\
+%\end{tabular}
+
+
+
+\end{resume}
+\end{document}
