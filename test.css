@@ -1,0 +1,248 @@
+
+
+.main{
+    margin: auto;
+    /*max-width: 86ch;*/
+    max-width: 93ch;
+    padding: 4%;
+}
+
+footer{padding: 4%;}
+
+body{
+    /*font-family: "Times New Roman", Times, serif;*/
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    font-size: 13pt;
+    line-height: 1.5;
+    text-align: left;
+
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+}
+
+.arrow{
+    /*font-family: "Times New Roman", Times, serif;*/
+
+    font-size: 36pt;
+    color: rgb(100,30,30);
+}
+
+a{
+    text-decoration: none;
+}
+
+.pager{
+     height: 100vh;
+}
+.pager_half{
+     height: 50vh;
+}
+
+.video{
+    margin-top: 25px;
+}
+
+.photo{
+    float: left;
+    margin: 4%;
+    border: 2px solid #555;
+    margin-bottom: 2%;
+}
+
+.photo_alt{
+    border: 2px solid #555;
+    /*border-color: rgb(100,30,30);*/
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.shift{
+    /*padding-top: 4%;*/
+    padding-bottom: 1%;
+    float: center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column-left {
+  float: left;
+  width: 42%;
+  padding: 2%;
+}
+
+.column-right {
+  float: left;
+  width: 58%;
+  padding: 2%;
+}
+
+.keep {
+    word-break: keep-all;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul{
+    list-style-type: square;
+    overflow: hidden;
+}
+
+nav li:before {
+    content: none;
+}
+
+header{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: rgb(30,30,30);
+
+}
+
+nav{
+    text-align: center;
+    font-size: 18px;
+    background: rgb(100,30,30);
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding: 10px 0px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin:0px 5px;
+    padding: 5px 5px;
+    color: rgb(255, 255, 245);
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 245);
+}
+
+p{
+    text-align: left;
+}
+
+.text{
+    color: rgb(255, 255, 245);
+}
+.text:hover{
+    color: rgb(185, 185, 175);
+}
+.arrow:hover{
+    color: rgb(185, 185, 175);
+}
+/*
+body{
+    margin: 2% 3%;
+    font-family: "Times New Roman", Times, serif;
+    border-color: grey;
+    font-size: 16pt;
+    background-color: rgb(255, 255, 245);
+}
+
+ul{
+    list-style-type: square;
+}
+
+#all{
+    
+}
+
+#cite{
+    color: rgb(100,100,100);
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+sup a{
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+#footnote{
+    font-size: 14pt;
+}
+
+nav{
+    text-align: center;
+    font-size: 18px;
+    background: black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding: 5px 0px;
+}
+nav ul li{
+    display: inline;
+    margin:0px 5px;
+    padding: 5px 5px;
+    color: rgb(255, 255, 245);
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 245);
+}
+
+
+#main{
+    padding: 0% 3%;
+    width: 50%;
+    max-width: 50%;
+    float: left;
+}
+
+
+.divider{
+    background: black;
+    height: 1px;
+    margin: 30px 0px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+ul, ol{
+    line-height: 1.5;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+}
+    
+*/
