@@ -191,10 +191,21 @@
 \item[] \textbf{``Mechanisms for a No-Regret Agent: Beyond the Common Prior''} (with  J. Hartline, A. Johnsen)
 \vspace*{.05in}
 	\begin{list2}
-		\item[] \textit{Abstract:} We study repeated games of incomplete information between a policymaker with commitment power and a single agent.
-		We propose policies that adapt to historical data over time, assuming the agent does the same, without making any assumptions about the data-generating process.
-		They are competitive with optimal static policies that rely on much stronger assumptions, like common prior beliefs.
-		We conclude that robust solution concepts in mechanism design may be too pessimistic if they do not account for the possibility of learning over time.
+		\item[] \textit{Proceedings of the IEEE Symposium on Foundations of Computer Science (FOCS 2020)}
+		\vspace*{.05in}
+		\item[] \textit{Abstract:} 
+		We study incomplete information games where a policymaker commits to a policy, an agent responds, and payoffs depend on a state of nature.
+		To solve these games, it is typical to (i) make strong prior knowledge assumptions or (ii) make no prior knowledge assumptions and optimize against the worst case.
+		We show that, if the designer and agent interact repeatedly over time, we can approximate the superior performance of (i) while preserving the robustness of (ii).
+		The state is revealed after every period, but we make no other assumptions on the state-generating process.
+		We develop calibrated policies that adapt to historical data over time, assuming the agent does the same, even if the data is highly non-stationary.
+		This requires new behavioral assumptions that build on prior work on learning in games and capture ideas like ``rationality'' and ``unpredictability'' in a fully ex post sense.
+		
+%		We study repeated games of incomplete information between a policymaker with commitment power and a single agent.
+%		We propose policies that adapt to historical data over time, assuming the agent does the same, without making any assumptions about the data-generating process.
+%		This requires new behavioral assumptions that capture ideas like ``rationality'' and ``unpredictability'' in a fully ex post sense.
+%		Our policies are competitive with optimal static policies that rely on much stronger assumptions, like common prior beliefs.
+		
 	\end{list2}
 \end{list1}
 \vspace*{.1in}
@@ -205,7 +216,7 @@
 		\item[] \textit{Abstract:} 
 		I propose a new approach to mechanism design: rather than assume a common prior belief, assume access to a common dataset.
 		I restrict attention to incomplete information games where a designer commits to a policy and a single agent responds.
-		I proposed a penalized policy that performs well under weak assumptions on how the agent learns from data.
+		I propose a penalized policy that performs well under weak assumptions on how the agent learns from data.
 		Policies that are too complex, in a precise sense, are penalized because they lead to unpredictable responses by the agent.
 		This approach leads to new insights in models of vaccine distribution, prescription drug approval, performance pay, and product bundling.
 	\end{list2}
