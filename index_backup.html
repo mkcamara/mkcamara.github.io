@@ -5,14 +5,13 @@
     <meta name="description" content="A PhD student at Northwestern University, Modibo Camara does research at the intersection of economic theory, computer science, and statistics.">
     <meta name="author" content="Modibo Camara">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<!--<link href="main.css" rel="stylesheet" />-->
 	<title>Modibo Camara | PhD Student</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://latex.now.sh/style.css">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <a name="home"></a>
@@ -25,31 +24,24 @@
 	            <li>I have done internships at Microsoft Research (2020), the Federal Reserve Board (2015), and the Commodity Futures Trading Commission (2014).</li>
 	            <li>I am grateful to be co-advised by Eddie Dekel (Econ) and Jason Hartline (CS).</li>
 	        </ul>-->
-	    	<center class="subheader">PhD Candidate at <b>Northwestern University</b>'s Department of Economics.</center>
+	    	<center>PhD Candidate at <b>Northwestern University</b>'s Department of Economics.</center>
 	    </header>
-	    <picture>
-		  <source srcset="headshot6.jpg" media="(max-width: 520px)">
-		  	<source srcset="headshot4.jpg" media="(max-width: 720px)">
-		  <source srcset="photo11.jpg">
-		  <img class="photo_alt" src="headshot5.png" width="100%">
-		</picture>
-	    <!---->
-	    <div id="about">
+	    <div>
+	    	<img class="photo_alt" src="photo11.jpg" width="100%" loading="lazy">
 		    <nav id="navbar">
 		        <ul list-style-type="none">
-		        <a href=#about_link id=nav_about><li class="text" id="nav_about_text" class="nav_left"><b>About</b></li></a>
-		        <!--<li>$*$</li>-->
-		        <a href=#papers_link id="nav_papers"><li class="text" id="nav_papers_text"><b>Papers</b></li></a>
-		        <!--<li>$*$</li>-->
-		        <a href=#talks_link id="nav_talks"><li class="text" id="nav_talks_text"><b>Talks</b></li></a>
-		        <!--<li>$*$</li>-->
+		        <a href=#about><li class="text"><b>About</b></li></a>
+		        <li>$*$</li>
+		        <a href=#papers><li class="text"><b>Working Papers</b></li></a>
+		        <li>$*$</li>
+		        <a href=#talks><li class="text"><b>Recorded Talks</b></li></a>
+		        <li>$*$</li>
 		        <a href="cv.pdf"><li class="text">CV</li></a>
 		        <a href="mailto:mcamara@u.northwestern.edu"><li class="text">Email</li></a>
-		        <a href="https://twitter.com/modibokhane"><li class="text" class="nav_right">Twitter</li></a>
+		        <a href="https://twitter.com/modibokhane"><li class="text">Twitter</li></a>
 		        </ul>
 		    </nav>
-		  </div>
-		  <div></div>
+		   </div>
 	</div>
 	<div class="main">
 
@@ -68,15 +60,15 @@
 	        <!--<p>Ultimately, the goal for this line of research is to help people make better decisions and build better, more reliable institutions. This aligns with the view of economics as an engineering discipline.</p>-->
 	    </section>
 	    <section>
-	    	<a name="about_link"></a>
-	    	<br><br>
+	    	<a name="about"></a>
+	    	<br>
 	    	<h2>About</h2>
 
 	        <p class="keep">I'm a microeconomic theorist who does work at the intersection of economics and computer science. </p>
 
-	    	<p>In July 2022, I will be a Saieh Family Fellow at the <b>University of Chicago</b>'s Becker-Friedman Institute.</p>
+	    	<p>Next year, I will be a Saieh Family Fellow at the <b>University of Chicago</b>'s Becker-Friedman Institute.</p>
 
-	    	<p>In July 2023, I will be an Assistant Professor of Economics at the <b>Stanford Graduate School of Business</b>.</p>
+	    	<p>After that, I will be an Assistant Professor of Economics at the <b>Stanford Graduate School of Business</b>.</p>
 
 	        <p>My recent and upcoming talks include:
 	        <ul>
@@ -87,12 +79,12 @@
 	        	<li>Penn State University (Fall 2022)</li>
 	        </ul></p>
 	       </section>
-	       <section class="pager_half" id="papers"></section>
-	       <center><a class="arrow" href=#papers_link>&#8659;</a></center>
+	       <section class="pager_half"></section>
+	       <center><a class="arrow" href=#papers>&#8659;</a></center>
 	       <section class="pager_half"></section>
 	       <section>
-		        <a name="papers_link"></a>
-		        <br><br>
+		        <a name="papers"></a>
+		        <br>
 		        <h2>Working Papers</h2>
 
 		        <h4><a href="ctc.pdf">Computationally Tractable Choice</a></h4>
@@ -100,36 +92,36 @@
 		        <h5>
 		    		To appear at EC 2022.
 		    	</h5>
-		        <!--<p>
-		            I incorporate computational constraints into decision theory in order to capture how cognitive limits affect behavior.</p>-->
-		            <!--I impose an axiom of computational tractability that rules out behaviors that are thought to be fundamentally hard. I use this framework to better understand common behavioral heuristics: if choices are tractable and consistent with the expected utility axioms, then they are observationally equivalent to forms of choice bracketing. Then I show that a computationally-constrained decisionmaker can be objectively better off if she is willing to use heuristics that would not appear rational to an outside observer.-->
+		        <p>
+		            I incorporate computational constraints into decision theory in order to capture how cognitive limits affect behavior.
+		            <!--I impose an axiom of computational tractability that rules out behaviors that are thought to be fundamentally hard. I use this framework to better understand common behavioral heuristics: if choices are tractable and consistent with the expected utility axioms, then they are observationally equivalent to forms of choice bracketing. Then I show that a computationally-constrained decisionmaker can be objectively better off if she is willing to use heuristics that would not appear rational to an outside observer.--></p>
 
 		        <h4><a href="mdcd.pdf">Mechanism Design with a Common Dataset</a></h4>
 		        <h5>
 		        	To appear at EC 2022.
 		    	</h5>
-		    	<!--<p>I replace strong common prior assumptions with learning from available data.</p>-->
+		    	<p>I replace strong common prior assumptions with learning from available data.</p>
 
 		    	<h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a></h4> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
 		        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.
 		            </br>Appeared at FOCS 2020 (<a href="focs_camera.pdf">extended abstract</a>).
 		        	</br>Selected for "Highlights Beyond EC" at EC 2021.</h5>
-		        <!--<p>We replace strong common prior assumptions with learning from available data.</p>-->
+		        <p>We replace strong common prior assumptions with learning from available data.</p>
 		        
 			</section>
-			<section class="pager_half" id="talks"></section>
-	       <center><a class="arrow" href=#talks_link>&#8659;</a></center>
+			<section class="pager_half"></section>
+	       <center><a class="arrow" href=#talks>&#8659;</a></center>
 	       <section class="pager_half"></section>
 			<section>
-		        <a name="talks_link"></a>
-		        <br><br>
+		        <a name="talks"></a>
+		        <br>
 		        <h2>Recorded Talks</h2>
 
 		        <h4>Mechanisms for a No-Regret Agent: Beyond the Common Prior (1h)</h4>
-		        <p>Recorded in September 2022 for the Cornell ORIE Colloquium.</p>
+		        <p>Recorded in September 2022 for the Cornell ORIE Weekly Colloquium.</p>
 
 		        <div class="video">
-		            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zG9bjr5pdl4"></iframe>
+		            <iframe width="560" height="315" src="https://www.youtube.com/embed/zG9bjr5pdl4"></iframe>
 		        </div>
 		    </section>
 
@@ -154,51 +146,14 @@
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
 
-		var nav_about = document.getElementById("nav_about");
-		var nav_about_text = document.getElementById("nav_about_text");
-		var about = document.getElementById("about");
-		var about_top = about.offsetTop;
-
-		var nav_papers = document.getElementById("nav_papers");
-		var nav_papers_text = document.getElementById("nav_papers_text");
-		var papers = document.getElementById("papers");
-		var papers_top = papers.offsetTop;
-
-		var nav_talks = document.getElementById("nav_talks");
-		var nav_talks_text = document.getElementById("nav_talks_text");
-		var talks = document.getElementById("talks");
-		var talks_top = talks.offsetTop;
-
-		var pos = window.pageYOffset;
 		function myFunction() {
 		  if (window.pageYOffset >= sticky) {
 		    navbar.classList.add("sticky")
 		  } else {
 		    navbar.classList.remove("sticky");
 		  }
-		  if (window.pageYOffset >= about_top & window.pageYOffset < papers_top) {
-		  	nav_about_text.classList.remove("text");
-		    nav_about_text.classList.add("hl");
-		  } else {
-		    nav_about_text.classList.remove("hl");
-		    nav_about_text.classList.add("text");
-		  }
-		  if (window.pageYOffset >= papers_top & window.pageYOffset < talks_top) {
-		  	nav_papers_text.classList.remove("text");
-		    nav_papers_text.classList.add("hl");
-		  } else {
-		    nav_papers_text.classList.remove("hl");
-		    nav_papers_text.classList.add("text");
-		  }
-		  if (window.pageYOffset >= talks_top) {
-		  	nav_talks_text.classList.remove("text");
-		    nav_talks_text.classList.add("hl");
-		  } else {
-		    nav_talks_text.classList.remove("hl");
-		    nav_talks_text.classList.add("text");
-		  }
 		}
-	</script>
+		</script>
 
     <footer>
         <br><hr>

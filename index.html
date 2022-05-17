@@ -4,113 +4,201 @@
 	<meta charset="utf-8" />
     <meta name="description" content="A PhD student at Northwestern University, Modibo Camara does research at the intersection of economic theory, computer science, and statistics.">
     <meta name="author" content="Modibo Camara">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!--<link href="main.css" rel="stylesheet" />-->
 	<title>Modibo Camara | PhD Student</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://latex.now.sh/style.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <a name="home"></a>
-    <div>
-    <header>
-        <h1>Modibo Camara</h1>
-        <!--<p>Here's a quick bio in lieu of a CV.</p>
-        <ul>
-            <li>I graduated in 2016 from the University of Pennsylvania, with majors in economics and math. I also have an M.A. in economics from Northwestern.</li>
-            <li>I have done internships at Microsoft Research (2020), the Federal Reserve Board (2015), and the Commodity Futures Trading Commission (2014).</li>
-            <li>I am grateful to be co-advised by Eddie Dekel (Econ) and Jason Hartline (CS).</li>
-        </ul>-->
-    </header>
-    <nav>
-        <ul list-style-type="none">
-        <a href=#home><li>Home</li></a>
-        <li>|</li>
-        <a href=#papers><li>Working Papers</li></a>
-        <li>|</li>
-        <a href=#talks><li>Recorded Talks</li></a>
-        </ul>
-    </nav>
-    <!--<img class="photo" src="headshot.jpg" width="38%" loading="lazy">-->
-    <img class="photo" src="headshot.jpg" width="35%" loading="lazy">
-    <section>
-        <p class="shift">Welcome! I'm a sixth-year Economics PhD student at Northwestern.
-            <ul>
-                <li>Office: KGH 3368</li>
-                <li>Email: <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a></li>
-                <li>Twitter:  <a href="https://twitter.com/modibokhane">@modibokhane</a></li>
-            </ul>
-        </p>
-        <p class="keep">I am a microeconomic theorist who does work at the intersection of economics and computer science.</p>
+    <div class="pager">
+	    <header>
+	        <h1>Modibo K. Camara</h1>
+	        <!--<p>Here's a quick bio in lieu of a CV.</p>
+	        <ul>
+	            <li>I graduated in 2016 from the University of Pennsylvania, with majors in economics and math. I also have an M.A. in economics from Northwestern.</li>
+	            <li>I have done internships at Microsoft Research (2020), the Federal Reserve Board (2015), and the Commodity Futures Trading Commission (2014).</li>
+	            <li>I am grateful to be co-advised by Eddie Dekel (Econ) and Jason Hartline (CS).</li>
+	        </ul>-->
+	    	<center class="subheader">PhD Candidate at <b>Northwestern University</b>'s Department of Economics.</center>
+	    </header>
+	    <picture>
+		  <source srcset="headshot6.jpg" media="(max-width: 520px)">
+		  	<source srcset="headshot4.jpg" media="(max-width: 720px)">
+		  <source srcset="photo11.jpg">
+		  <img class="photo_alt" src="headshot5.png" width="100%">
+		</picture>
+	    <!---->
+	    <div id="about">
+		    <nav id="navbar">
+		        <ul list-style-type="none">
+		        <a href=#about_link id=nav_about><li class="text" id="nav_about_text" class="nav_left"><b>About</b></li></a>
+		        <!--<li>$*$</li>-->
+		        <a href=#papers_link id="nav_papers"><li class="text" id="nav_papers_text"><b>Papers</b></li></a>
+		        <!--<li>$*$</li>-->
+		        <a href=#talks_link id="nav_talks"><li class="text" id="nav_talks_text"><b>Talks</b></li></a>
+		        <!--<li>$*$</li>-->
+		        <a href="cv.pdf"><li class="text">CV</li></a>
+		        <a href="mailto:mcamara@u.northwestern.edu"><li class="text">Email</li></a>
+		        <a href="https://twitter.com/modibokhane"><li class="text" class="nav_right">Twitter</li></a>
+		        </ul>
+		    </nav>
+		  </div>
+		  <div></div>
+	</div>
+	<div class="main">
 
-        <p>Here's my <a href="cv.pdf">CV</a>.</p>
-        <!--<p>Ultimately, the goal for this line of research is to help people make better decisions and build better, more reliable institutions. This aligns with the view of economics as an engineering discipline.</p>-->
-        <br></br>
-        <h5>Recent and Upcoming Talks:</h5>
-        <ul>
-            <li>European Winter Meeting of the Econometric Society</li>
-        	<li>Cornell ORIE Colloquium</li>
-        	<li>Economics and Computation 2021 ("Highlights Beyond EC")</li>
-        	<li>Risk, Uncertanty, and Decision (RUD) 2021</li>
-        	<li>Decision: Theory, Experiments, and Applications (D-TEA) 2021</li>
-        </ul>
-    </section>
+	    <!--<img class="photo" src="headshot.jpg" width="38%" loading="lazy">-->
+	    <!--<img class="photo" src="headshot.jpg" width="35%" loading="lazy">-->
+	    <section class="keep">
+	    	<!--<center><img class="photo" src="headshot.jpg" width="100%" loading="lazy"></center>-->
+	    	
 
-    <section>
-        <a name="papers"></a>
-        <h2>Working Papers</h2>
+			<!--<p>
+	            <ul>
+	                <li>Email: <a href="mailto:mcamara@u.northwestern.edu">mcamara@u.northwestern.edu</a></li>
+	                <li>Twitter:  <a href="https://twitter.com/modibokhane">@modibokhane</a></li>
+	            </ul>
+	        </p>-->
+	        <!--<p>Ultimately, the goal for this line of research is to help people make better decisions and build better, more reliable institutions. This aligns with the view of economics as an engineering discipline.</p>-->
+	    </section>
+	    <section>
+	    	<a name="about_link"></a>
+	    	<br><br>
+	    	<h2>About</h2>
 
-        <h4><a href="ctc.pdf">Computationally Tractable Choice</a></h4>
-        <!--<h5>Previously known as <i>High-Dimensional Decision Theory</i></h5>-->
-        <h5>Job Market Paper.</h5>
+	        <p class="keep">I'm a microeconomic theorist who does work at the intersection of economics and computer science. </p>
 
-        <p>
-            I incorporate computational constraints into decision theory in order to capture how cognitive limitations affect behavior. I impose an axiom of computational tractability that rules out behaviors that are thought to be fundamentally hard. I use this framework to better understand common behavioral heuristics: if choices are tractable and consistent with the expected utility axioms, then they are observationally equivalent to forms of choice bracketing. Then I show that a computationally-constrained decisionmaker can be objectively better off if she is willing to use heuristics that would not appear rational to an outside observer.</p>
+	    	<p>In July 2022, I will be a Saieh Family Fellow at the <b>University of Chicago</b>'s Becker-Friedman Institute.</p>
 
-        <h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
+	    	<p>In July 2023, I will be an Assistant Professor of Economics at the <b>Stanford Graduate School of Business</b>.</p>
 
-        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.
-            </br>Appeared at FOCS 2020 (<a href="focs_camera.pdf">extended abstract</a>).
-        	</br>Selected for "Highlights Beyond EC" at EC 2021.</h5>
+	        <p>My recent and upcoming talks include:
+	        <ul>
+	        	<li>University of British Columbia (April 2022)</li>
+	        	<li><a href="https://sites.google.com/view/restudtour2022/">Review of Economic Studies Tour</a> (May 2022 in Manchester, Vienna, Paris)</li>
+	            <li>University of Bonn (May 2022)</li>
+	        	<li><a href="https://ec22.sigecom.org/">ACM Conference on Economics and Computation</a> (July 2022 in Boulder, Colorado)</li>
+	        	<li>Penn State University (Fall 2022)</li>
+	        </ul></p>
+	       </section>
+	       <section class="pager_half" id="papers"></section>
+	       <center><a class="arrow" href=#papers_link>&#8659;</a></center>
+	       <section class="pager_half"></section>
+	       <section>
+		        <a name="papers_link"></a>
+		        <br><br>
+		        <h2>Working Papers</h2>
 
-        <!--<p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- based on <i>counterfactual calibration</i> -- that capture the spirit of rationality without relying on beliefs.</p>-->
+		        <h4><a href="ctc.pdf">Computationally Tractable Choice</a></h4>
+		        <!--<h5>Previously known as <i>High-Dimensional Decision Theory</i></h5>-->
+		        <h5>
+		    		To appear at EC 2022.
+		    	</h5>
+		        <!--<p>
+		            I incorporate computational constraints into decision theory in order to capture how cognitive limits affect behavior.</p>-->
+		            <!--I impose an axiom of computational tractability that rules out behaviors that are thought to be fundamentally hard. I use this framework to better understand common behavioral heuristics: if choices are tractable and consistent with the expected utility axioms, then they are observationally equivalent to forms of choice bracketing. Then I show that a computationally-constrained decisionmaker can be objectively better off if she is willing to use heuristics that would not appear rational to an outside observer.-->
 
-        <p>This paper studies a rich class of single-agent policy design problems that includes monopoly regulation, contract design, and Bayesian persuasion as special cases.
-		Most existing solutions either (a) assume a common prior belief over the environment, or (b) make no prior knowledge assumptions and optimize against the worst case.
-		We show that, in repeated settings with rich feedback, we can approximate the superior performance of (a) while preserving the robustness of (b).
-		We develop simple calibrated policies that ensure vanishing or bounded regret, relative to the ex-post-optimal static policy.
-		Our guarantees are prior-free and hold even in highly non-stationary environments.
-		They rely on novel behavioral assumptions that capture concepts like ``rationality'' or ``unpredictability'' without relying on beliefs.</p>
+		        <h4><a href="mdcd.pdf">Mechanism Design with a Common Dataset</a></h4>
+		        <h5>
+		        	To appear at EC 2022.
+		    	</h5>
+		    	<!--<p>I replace strong common prior assumptions with learning from available data.</p>-->
 
-        <h4><a href="mdcd.pdf">Mechanism Design with a Common Dataset</a></h4>
-        <p>
-            I propose a new approach to mechanism design: rather than assume a common prior belief, assume access to a common dataset. I restrict attention to incomplete information games where a designer commits to a policy and a single agent responds. I proposed a penalized policy that performs well under weak assumptions on how the agent learns from data. Policies that are too complex, in a precise sense, are penalized because they lead to unpredictable responses by the agent. This approach leads to new insights in models of vaccine distribution, prescription drug approval, performance pay, and product bundling.</p>
-    </section>
+		    	<h4><a href="https://arxiv.org/abs/2009.05518">Mechanisms for a No-Regret Agent: Beyond the Common Prior</a></h4> <!--(<a href="https://conference2.aau.at/event/4/contributions/173/">30-min talk</a>)</h4>-->
+		        <h5>Joint with <a href="https://sites.northwestern.edu/hartline/">Jason Hartline</a> and <a href="http://users.eecs.northwestern.edu/~acj861/">Aleck Johnsen</a>.
+		            </br>Appeared at FOCS 2020 (<a href="focs_camera.pdf">extended abstract</a>).
+		        	</br>Selected for "Highlights Beyond EC" at EC 2021.</h5>
+		        <!--<p>We replace strong common prior assumptions with learning from available data.</p>-->
+		        
+			</section>
+			<section class="pager_half" id="talks"></section>
+	       <center><a class="arrow" href=#talks_link>&#8659;</a></center>
+	       <section class="pager_half"></section>
+			<section>
+		        <a name="talks_link"></a>
+		        <br><br>
+		        <h2>Recorded Talks</h2>
 
-    <section>
+		        <h4>Mechanisms for a No-Regret Agent: Beyond the Common Prior (1h)</h4>
+		        <p>Recorded in September 2022 for the Cornell ORIE Colloquium.</p>
+
+		        <div class="video">
+		            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zG9bjr5pdl4"></iframe>
+		        </div>
+		    </section>
+
+		        <!--<p>A rich class of mechanism design problems can be understood as incomplete-information games between a principal who commits to a policy and an agent who responds, with payoffs determined by an unknown state of the world. Traditionally, these models require strong and often-impractical assumptions about beliefs (a common prior over the state). In this paper, we dispense with the common prior. Instead, we consider a repeated interaction where both the principal and the agent may learn over time from the state history. We reformulate mechanism design as a reinforcement learning problem and develop mechanisms that attain natural benchmarks without any assumptions on the state-generating process. Our results make use of novel behavioral assumptions for the agent -- based on <i>counterfactual calibration</i> -- that capture the spirit of rationality without relying on beliefs.</p>-->
+	</div>
+
+    <!--<section>
         <a name="talks"></a>
         <h2>Recorded Talks</h2>
 
-        <h5>New recordings coming soon.</h5>
-
-
-        <!--<h4>Computationally Tractable Choice (31m)</h4>
+        <h4>Computationally Tractable Choice (31m)</h4>
         <p>Recorded in June 2021 for the RUD conference. Target audience: economic theorists.</p>
         <center class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VxaQWBToat8"></iframe>
-        </center>-->
-
-        <h4>Mechanisms for a No-Regret Agent (1h)</h4>
-
-        <p>Recorded in September 2021 at Cornell ORIE. <a href=https://cornell.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d6d955dd-4823-4fc4-8726-ada401387614>Link here.</a></p>
+        </center>
         
+    </section>-->
 
-        <!--<center class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bt3IVL691Wg"></iframe>
-        </center>-->
-    </section>
+    <script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		var nav_about = document.getElementById("nav_about");
+		var nav_about_text = document.getElementById("nav_about_text");
+		var about = document.getElementById("about");
+		var about_top = about.offsetTop;
+
+		var nav_papers = document.getElementById("nav_papers");
+		var nav_papers_text = document.getElementById("nav_papers_text");
+		var papers = document.getElementById("papers");
+		var papers_top = papers.offsetTop;
+
+		var nav_talks = document.getElementById("nav_talks");
+		var nav_talks_text = document.getElementById("nav_talks_text");
+		var talks = document.getElementById("talks");
+		var talks_top = talks.offsetTop;
+
+		var pos = window.pageYOffset;
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		  if (window.pageYOffset >= about_top & window.pageYOffset < papers_top) {
+		  	nav_about_text.classList.remove("text");
+		    nav_about_text.classList.add("hl");
+		  } else {
+		    nav_about_text.classList.remove("hl");
+		    nav_about_text.classList.add("text");
+		  }
+		  if (window.pageYOffset >= papers_top & window.pageYOffset < talks_top) {
+		  	nav_papers_text.classList.remove("text");
+		    nav_papers_text.classList.add("hl");
+		  } else {
+		    nav_papers_text.classList.remove("hl");
+		    nav_papers_text.classList.add("text");
+		  }
+		  if (window.pageYOffset >= talks_top) {
+		  	nav_talks_text.classList.remove("text");
+		    nav_talks_text.classList.add("hl");
+		  } else {
+		    nav_talks_text.classList.remove("hl");
+		    nav_talks_text.classList.add("text");
+		  }
+		}
+	</script>
 
     <footer>
         <br><hr>
