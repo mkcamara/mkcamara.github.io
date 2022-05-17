@@ -45,6 +45,10 @@ a{
     margin-top: 25px;
 }
 
+.subheader{
+    margin-bottom: 4px;
+}
+
 .photo{
     float: left;
     margin: 4%;
@@ -131,10 +135,19 @@ nav ul li{
     border: 0px;
     margin: 0px;
    /*margin: 0px 1%;*/
-    padding: 100px 1.5%;
+    padding: 100px 1.4%;
     color: rgb(255, 255, 245);
     
 }
+
+
+.nav_left{
+    padding-left: 0%;
+}
+.nav_right{
+    padding-right: 0%;
+}
+
 nav ul a{
     text-decoration: none;
     /*color: rgb(255, 255, 245);*/
