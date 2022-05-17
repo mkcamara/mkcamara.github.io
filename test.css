@@ -121,20 +121,23 @@ nav{
 nav ul{
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
-    padding: 10px 0px;
+    padding: 7px 0%;
+    border: 0px;
+    /*padding: 10px 0px;*/
 }
 nav ul li{
     list-style-type: none;
     display: inline;
-    margin:0px 5px;
-    padding: 5px 5px;
+    border: 0px;
+    margin: 0px;
+   /*margin: 0px 1%;*/
+    padding: 100px 1.5%;
     color: rgb(255, 255, 245);
     
 }
 nav ul a{
     text-decoration: none;
-    color: rgb(255, 255, 245);
+    /*color: rgb(255, 255, 245);*/
 }
 
 p{
@@ -150,6 +153,12 @@ p{
 .arrow:hover{
     color: rgb(185, 185, 175);
 }
+
+.hl{
+    color: rgb(0, 0, 0);
+    background: rgb(185, 185, 175);;
+}
+
 /*
 body{
     margin: 2% 3%;
